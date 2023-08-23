@@ -1,0 +1,208 @@
+/* font-family: 'Poppins', sans-serif; */
+/* Color Families
+    background_color: black;
+    header_color: #FBEBC7;
+    secondary_color: #AE2589;
+    tirciary_color: #BCCAA5
+    link_color: #
+    hover_color: #8F3700;
+    visited_color: #
+*/
+* {
+    font-family: var(--font_family);
+}
+:root {
+    --font_family: 'Poppins', sans-serif;
+    --text_color: #222;
+    --primary_color: #788390;
+    --background_color: #f9f9f9;
+    --tirciary_color: #BCCAA5;
+    --header_color: #242C35;
+    --white_text_color: whitesmoke;
+}
+body {
+    background-color: var(--background_color);
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: var(--header_color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.header_intro  {
+    flex: 1 0 100%;
+    align-self: center;
+    justify-self: center;
+}
+.header_button {
+    flex: 0 1 100%;
+    color: var(--white_text_color);
+    text-decoration: none;
+    border: 3px solid var(--white_text_color);
+    padding: 10px;
+}
+.header_button:hover {
+    box-shadow: 1px 1px 10px var(--tirciary_color);
+    cursor: pointer;
+}
+h1 {
+    font-weight: 600;
+    color: var(--white_text_color);
+    text-align: center;
+}
+span {
+    color: #BCCAA5;
+}
+.nav_list {
+    background-color: #242C35;
+    font-family: var(--font_family);
+    line-height: 3;
+    text-align: center;
+    border-bottom: 3px solid #788390;
+
+}
+.nav_list_item {
+    color:var(--white_text_color);
+    font-weight: 400;
+    padding: 15px;
+    text-decoration: none;
+}
+#about {
+    display: block;
+    text-align:  center;
+    margin: 0   20%;
+}
+#about img {
+    margin: 8%;
+    width: 300px;
+    text-align: center;
+    box-shadow: 1px 1px 15px var(--tirciary_color);
+}
+a {
+    color: var(--text_color);
+}
+a:visited {
+    color: var(--primary_color);
+}
+a:hover {
+    color: #dbd2b4;
+}
+p {
+    color: var(--text_color);
+    font-weight: 400;
+}
+h2 {
+    color: var(--text_color);
+    font-weight: 700;
+    text-align: center;
+}
+h3 {
+    color: var(--text_color);
+    font-weight: 500;
+    text-align: center;
+}
+
+table {
+    margin: 10% auto;
+    color: var(--text_color);
+    font-weight: 400;
+    text-align: left;
+}
+th  {
+    font-weight: 600;
+    padding: 5px;
+}
+.grid   {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 5px;
+}
+.grid-item {
+    background-color: var(--background_color);
+    padding: 2%;
+}
+.grid-item:last-child {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+section {
+    text-align: center;
+    padding: 50px;
+}
+#work {
+    background-color: #efefef;
+}
+input, textarea {
+    margin: 4px;
+    width: 30vw;
+}
+input:hover, textarea:hover {
+    box-shadow: -3px -3px 10px var(--tirciary_color);
+}
+#submit_button {
+    background-color: transparent;
+    color: var(--text_color);
+    width: 15%;
+    border: 2px solid var(--text_color);
+}
+#submit_button:hover, #submit-button:focus {
+    background-color: var(--tirciary_color);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px var(--text_color);
+    transition-duration: .5s;
+}
+footer {
+    margin-top: 20px;
+    background-color: var(--header_color);
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+}
+.footer_text {
+    color: var(--white_text_color);
+    font-weight: 400;
+}
+@media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    section {
+        padding: 15px;
+    }
+    #about img {
+        width: 150px;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    section {
+        padding: 30px;
+    }
+    #about img {
+        width: 250px;
+    }
+  }
+  @media all and (max-width: 750px) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid-item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 25px;
+    }
+    .page-header img{
+      height: 35px;
+      text-align: center;
+    }
+  }

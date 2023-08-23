@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="shortcut icon" href="img/cactus-16x16.png" type="image/x-icon" />
+    <title>Emily C Portfolio</title>
+  </head>
+  <body>
+    <!--HOME-->
+    <header id="home">
+      <div class="header_intro">
+        <h1>
+          Hello! My name is <span>Emily Cardon</span>. <br />
+          I'm a full-stack web developer.
+        </h1>
+      </div>
+      <div>
+        <a class="header_button" href="#work">View My Work</a>
+      </div>
+    </header>
+    <nav class="nav_list">
+      <a href="#home" class="nav_list_item">Home</a>
+      <a href="#about" class="nav_list_item">About Emily</a>
+      <a href="#work" class="nav_list_item">Projects</a>
+      <a href="#contact" class="nav_list_item">Contact</a>
+    </nav>
+    <main>
+      <!--ABOUT-->
+      <section id="about">
+        <img
+          src="img/EmilyC2023.jpg"
+          alt="Photo of Emily Cardon"
+          class="about_pic"
+        />
+        <h2>Who am I?</h2>
+        <p>
+          Located in the Queen City, Charlotte, North Carolina, I am currently a
+          student of CareerFoundry's Web Development program. I have previous
+          studied graphic design and have 4 years of experience with many design
+          tools.
+        </p>
+        <a href="#contact">Let's make something stellar!</a>
+        <table>
+          <thead>
+            <tr>
+              <th class="td_head">Hard Skill</th>
+              <th class="td_head">Years of Experience</th>
+              <th class="td_head">Level of Expertise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Adobe Suite</td>
+              <td>5</td>
+              <td>Proficient</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>.5</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>.5</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>JS</td>
+              <td>0</td>
+              <td>Beginner</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!--PORTFOLIO PROJECTS-->
+      <section id="work">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="grid-item">
+            <h3>Project Name</h3>
+            <p>Project Explanation</p>
+            <a href="#">See project on GitHub</a>
+          </div>
+          <div class="grid-item">
+            <h3>Project Name</h3>
+            <p>Project Explanation</p>
+            <a href="#">See project on GitHub</a>
+          </div>
+          <div class="grid-item">
+            <h3>Project Name</h3>
+            <p>Project Explanation</p>
+            <a href="#">See project on GitHub</a>
+          </div>
+          <div class="grid-item">
+            <h3>Project Name</h3>
+            <p>Project Explanation</p>
+            <a href="#">See project on GitHub</a>
+          </div>
+          <div class="grid-item">
+            <h3>Project Name</h3>
+            <p>Project Explanation</p>
+            <a href="#">See project on GitHub</a>
+          </div>
+          <div class="grid-item">
+            <h3>Project Name</h3>
+            <p>Project Explanation</p>
+            <a href="#">See project on GitHub</a>
+          </div>
+          <div class="grid-item">
+            <h3>Project Name</h3>
+            <p>Project Explanation</p>
+            <a href="#">See project on GitHub</a>
+          </div>
+        </div>
+      </section>
+      <!--CONTACT FORM-->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Let's chat and see what we can create together.</p>
+        <form method="post" id="contact_form">
+          <label class="standard_label" for="contact_name"></label>
+          <input placeholder="Name" type="text" id="contact_name" required />
+          <br />
+          <label class="standard_label" for="contact_email"></label>
+          <input
+            placeholder="E-mail"
+            type="email"
+            id="contact_email"
+            required
+          />
+          <br />
+          <label class="standard_label" for="contact_telephone"></label>
+          <input
+            placeholder="Mobile Number"
+            type="tel"
+            id="contact_telephone"
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+          />
+          <br />
+          <label class="standard_label" for="message_box"></label>
+          <textarea
+            placeholder="Message"
+            id="message_box"
+            required
+            maxlength="300"
+          ></textarea>
+          <br />
+          <input type="submit" value="Submit" id="submit_button" />
+        </form>
+        <br />
+        <a href="cardon(dot)emily(at)gmailcom">cardon.emily@gmail.com</a>
+      </section>
+    </main>
+    <footer>
+      <p class="footer_text">Find Me On</p>
+      <div>
+        <a href="https://www.linkedin.com/in/emily-cardon/">
+          <img
+            src="Img/linkedin.svg"
+            alt="Linkedin Profile"
+            width="25"
+            height="25"
+          />
+        </a>
+        <a href="https://www.github.com/CardonEmily">
+          <img
+            src="img/github.svg"
+            alt="GitHub Profile"
+            height="25"
+            width="25"
+          />
+        </a>
+      </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
