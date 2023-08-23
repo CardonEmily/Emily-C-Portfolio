@@ -8,9 +8,11 @@
     hover_color: #8F3700;
     visited_color: #
 */
+
 * {
     font-family: var(--font_family);
 }
+
 :root {
     --font_family: 'Poppins', sans-serif;
     --text_color: #222;
@@ -20,11 +22,13 @@
     --header_color: #242C35;
     --white_text_color: whitesmoke;
 }
+
 body {
     background-color: var(--background_color);
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: var(--header_color);
     height: 100vh;
@@ -33,11 +37,13 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .header_intro  {
     flex: 1 0 100%;
     align-self: center;
     justify-self: center;
 }
+
 .header_button {
     flex: 0 1 100%;
     color: var(--white_text_color);
@@ -45,18 +51,22 @@ header {
     border: 3px solid var(--white_text_color);
     padding: 10px;
 }
+
 .header_button:hover {
     box-shadow: 1px 1px 10px var(--tirciary_color);
     cursor: pointer;
 }
+
 h1 {
     font-weight: 600;
     color: var(--white_text_color);
     text-align: center;
 }
+
 span {
     color: #BCCAA5;
 }
+
 .nav_list {
     background-color: #242C35;
     font-family: var(--font_family);
@@ -65,36 +75,44 @@ span {
     border-bottom: 3px solid #788390;
 
 }
+
 .nav_list_item {
     color:var(--white_text_color);
     font-weight: 400;
     padding: 15px;
     text-decoration: none;
 }
+
 #about {
     display: block;
     text-align:  center;
     margin: 0   20%;
 }
+
 #about img {
     margin: 8%;
     width: 300px;
     text-align: center;
     box-shadow: 1px 1px 15px var(--tirciary_color);
 }
+
 a {
     color: var(--text_color);
 }
+
 a:visited {
     color: var(--primary_color);
 }
+
 a:hover {
     color: #dbd2b4;
 }
+
 p {
     color: var(--text_color);
     font-weight: 400;
 }
+
 h2 {
     color: var(--text_color);
     font-weight: 700;
@@ -112,44 +130,60 @@ table {
     font-weight: 400;
     text-align: left;
 }
+
 th  {
     font-weight: 600;
     padding: 5px;
 }
+
 .grid   {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-gap: 5px;
 }
+
 .grid-item {
     background-color: var(--background_color);
     padding: 2%;
 }
+
 .grid-item:last-child {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 3;
-  }
-section {
+}
+
+#about {
     text-align: center;
     padding: 50px;
 }
+
 #work {
     background-color: #efefef;
 }
+
+#contact {
+    margin: 10%;
+    text-align: center;
+}
+
 input, textarea {
     margin: 4px;
     width: 30vw;
+    font-size: 15px;
 }
+
 input:hover, textarea:hover {
     box-shadow: -3px -3px 10px var(--tirciary_color);
 }
+
 #submit_button {
     background-color: transparent;
     color: var(--text_color);
     width: 15%;
     border: 2px solid var(--text_color);
+    font-size: 15px;
 }
 #submit_button:hover, #submit-button:focus {
     background-color: var(--tirciary_color);
@@ -157,6 +191,7 @@ input:hover, textarea:hover {
     box-shadow: 1px 1px 5px var(--text_color);
     transition-duration: .5s;
 }
+
 footer {
     margin-top: 20px;
     background-color: var(--header_color);
@@ -168,39 +203,81 @@ footer {
     color: var(--white_text_color);
     font-weight: 400;
 }
+
 @media all and (max-width: 500px) {
     .grid {
       grid-template-columns: 1fr;
     }
+
     section {
         padding: 15px;
     }
+
+    input, textarea {
+        font-size: 10px;
+    }
+
+    #submit_button {
+        font-size: 10px;
+    }
+
+    #contact {
+        padding: 5px;
+    }
+
     #about img {
         width: 150px;
     }
   }
+
   @media all and (min-width: 500px) and (max-width: 750px){
     .grid {
       grid-template-columns: 1fr 1fr;
     }
+
     section {
         padding: 30px;
     }
+
+    input, textarea {
+        font-size: 12px;
+    }
+
+    #submit_button {
+        font-size: 12px;
+    }
+
+    form {
+        padding: 0px;
+    }
+
     #about img {
         width: 250px;
     }
+
+    #submit_button {
+        background-color: transparent;
+        color: var(--text_color);
+        font-size: 15px;
+        width: 10px;
+        border: 2px solid var(--text_color);
+    }
   }
+
   @media all and (max-width: 750px) {
     .grid {
       grid-gap: 10px;
     }
+
     .grid-item:last-child {
       grid-column: auto / auto;
       grid-row: auto / auto;
     }
+
     h1 {
       font-size: 25px;
     }
+
     .page-header img{
       height: 35px;
       text-align: center;
